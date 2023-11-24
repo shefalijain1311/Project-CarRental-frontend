@@ -112,7 +112,7 @@ function BookingCar({ match }) {
               <p>
                 Rent Per Hour : <b>{car.rentPerHour}</b>
               </p>
-              <Checkbox
+              <Checkbox className="text-white"
                 onChange={(e) => {
                   if (e.target.checked) {
                     setdriver(true);
@@ -124,7 +124,7 @@ function BookingCar({ match }) {
                 Driver Required
               </Checkbox>
 
-              <h3>Total Amount : {totalAmount}</h3>
+              <h3 className="text-white">Total Amount : {totalAmount}</h3>
 
               <StripeCheckout
                 shippingAddress
